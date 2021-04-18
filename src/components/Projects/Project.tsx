@@ -9,17 +9,23 @@ interface Props {
   desc: string;
   languages: string[];
   color: string;
+  btn: string;
 }
 
 const Project = (props: Props) => {
-  const { img, title, desc, languages, color } = props;
+  const { img, title, desc, languages, color, btn } = props;
   const [langs, setLangs] = useState(languages);
 
   return (
     <div className={`project ${color}`}>
-      <div className="proj-image">{img}</div>
+      <div className="proj-image-container">
+        <div className="proj-image">
+          <img src="https://themewagon.com/wp-content/uploads/2018/07/Adventure_fet.jpg" />
+        </div>
+      </div>
       <div className="proj-title">{title}</div>
       <div className="proj-description">{desc}</div>
+      <a className={`proj-button proj-button-${btn}`}>Proceed to website</a>
       <div className="proj-languages">
         {/* {languages} */}
         <TypescriptIcon className="code-icon" />
