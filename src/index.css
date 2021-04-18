@@ -194,12 +194,8 @@ main-container {
   width: 50%;
   padding-right: var(--secondary-padding);
   height: 100vh;
-  /* position: absolute; */
-  /* top: 0;
-  left: 0; */
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   z-index: 0;
 }
@@ -270,34 +266,75 @@ main-container {
   justify-content: center;
   align-items: center;
 }
-.projects > div {
+.projects .project {
   position: relative;
   width: 280px;
   height: 440px;
-  border-radius: 12px;
+  border-radius: var(--border-radius-light);
   color: #fff;
-  /* transform: rotateX(45deg) rotateY(-15deg) rotate(45deg); */
+  margin: 0 var(--quaternary-margin);
+  transform: rotateX(45deg) rotateY(-15deg) rotate(45deg);
   transition: all 0.4s ease;
   overflow: hidden;
   cursor: pointer;
+  padding: var(--secondary-padding);
+  display: flex;
+  flex-direction: column;
 }
+
+.project .proj-image {
+  background-color: var(--tertiary-background);
+  height: 40%;
+  width: 100%;
+  margin-bottom: var(--secondary-margin);
+  border-radius: var(--border-radius-light);
+}
+
+.project .proj-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+.project .proj-description {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-light);
+}
+
+.project .proj-languages {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  padding-left: 8px;
+}
+
 .projects .proj-1 {
   z-index: 3;
   background-color: var(--primary-red);
   box-shadow: 20px 20px 60px rgba(34, 50, 84, 0.5),
     1px 1px 0px 1px var(--primary-red);
+  color: #fff;
 }
+
+.projects .proj-1:hover {
+  box-shadow: 1px 1px 5px var(--dark-red), 1px 1px 0px 1px var(--dark-red);
+}
+
 .projects .proj-2 {
   z-index: 3;
   background-color: var(--primary-orange);
   box-shadow: 20px 20px 60px rgba(34, 50, 84, 0.5),
     1px 1px 0px 1px var(--primary-orange);
 }
+.projects .proj-2:hover {
+  box-shadow: 1px 1px 5px var(--dark-orange), 1px 1px 0px 1px var(--dark-orange);
+}
 .projects .proj-3 {
   z-index: 3;
   background-color: var(--primary-yellow);
   box-shadow: 20px 20px 60px rgba(34, 50, 84, 0.5),
     1px 1px 0px 1px var(--primary-yellow);
+}
+.projects .proj-3:hover {
+  box-shadow: 1px 1px 5px var(--dark-yellow), 1px 1px 0px 1px var(--dark-yellow);
 }
 .projects .proj-4 {
   z-index: 3;
@@ -306,8 +343,12 @@ main-container {
     1px 1px 0px 1px var(--primary-blue);
 }
 
+.projects .proj-4:hover {
+  box-shadow: 1px 1px 5px var(--dark-blue), 1px 1px 0px 1px var(--dark-blue);
+}
+
 /* .projects > div:hover {
-  transform: rotateX(30deg) rotateY(-15deg) rotate(30deg) translate(-25px, 50px);
+  transform: rotateX(30deg) rotateY(0deg) rotate(0deg) translate(-25px, 50px);
 }
 .projects > div:hover:after {
   transform: translateX(100%);
