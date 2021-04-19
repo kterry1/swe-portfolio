@@ -246,7 +246,7 @@ body {
 
 .projects {
   margin: auto;
-  height: 100vh;
+  height: 92vh;
   width: 40%;
   user-select: none;
   transform: translate3d(0, 0, 0);
@@ -254,6 +254,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
   gap: 0px 0px;
   grid-template-areas:
     ". . ."
@@ -264,15 +265,16 @@ body {
 }
 .projects .project {
   position: relative;
-  width: 8rem;
-  height: 24rem;
+  min-width: 10rem;
+  height: 22rem;
   color: #fff;
   border-radius: var(--border-radius-heavy);
-  transform: rotate(29deg);
+  transform: rotate(31deg);
   transition: all 0.8s ease;
   overflow: hidden;
   cursor: pointer;
-  padding: var(--primary-padding);
+  margin-top: var(--secondary-margin);
+  padding: var(--secondary-padding);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -286,10 +288,9 @@ body {
   justify-content: space-between;
   align-items: center;
   position: relative;
-}
-
-.project:hover .proj-image img {
-  opacity: 1;
+  background-color: #ffc542;
+  /* background-color: #ff565e; */
+  border-radius: var(--border-radius-heavy);
 }
 
 .project .proj-title {
@@ -362,6 +363,7 @@ body {
 }
 
 .proj-languages .code-icon {
+  padding: var(--tertiary-padding);
   height: 1.5rem;
 }
 
@@ -374,21 +376,9 @@ body {
   color: #fff;
 }
 
-/* .projects .proj-1:hover {
-  box-shadow: 1px 1px 5px var(--dark-red), 1px 1px 0px 1px var(--dark-red);
-  transform: rotateX(20deg) rotateY(0deg) rotate(0deg) translate(170px, -355px);
+.proj-1:hover,
+.proj-2:hover,
+.proj-3:hover,
+.proj-4:hover {
+  transform: rotate(31deg) translate(0px, -5rem);
 }
-
-.projects .proj-2:hover {
-  box-shadow: 1px 1px 5px var(--dark-purple), 1px 1px 0px 1px var(--dark-purple);
-  transform: rotateX(20deg) rotateY(0deg) rotate(0deg) translate(170px, -355px);
-}
-.projects .proj-3:hover {
-  box-shadow: 1px 1px 5px var(--dark-orange), 1px 1px 0px 1px var(--dark-orange);
-  transform: rotateX(20deg) rotateY(0deg) rotate(0deg) translate(170px, -355px);
-}
-
-.projects .proj-4:hover {
-  box-shadow: 1px 1px 5px var(--dark-blue), 1px 1px 0px 1px var(--dark-blue);
-  transform: rotateX(20deg) rotateY(0deg) rotate(0deg) translate(170px, -355px);
-} */

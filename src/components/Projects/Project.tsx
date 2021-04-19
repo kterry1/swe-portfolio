@@ -21,8 +21,8 @@ const Project = (props: Props) => {
       <div className="proj-image-container">
         <div className="proj-image"></div>
       </div>
-      <div className="proj-title">{title}</div>
-      <div className="proj-description">{desc}</div>
+      {/* <div className="proj-title">{title}</div> */}
+      {/* <div className="proj-description">{desc}</div> */}
       {/* <a className={`proj-button proj-button-${btn}`}>Proceed to website</a> */}
       <div className="proj-languages">
         {/* {languages} */}
