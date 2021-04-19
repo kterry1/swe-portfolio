@@ -19,13 +19,11 @@ const Project = (props: Props) => {
   return (
     <div className={`project ${color}`}>
       <div className="proj-image-container">
-        <div className="proj-image">
-          <img src="https://themewagon.com/wp-content/uploads/2018/07/Adventure_fet.jpg" />
-        </div>
+        <div className="proj-image"></div>
       </div>
       <div className="proj-title">{title}</div>
       <div className="proj-description">{desc}</div>
-      <a className={`proj-button proj-button-${btn}`}>Proceed to website</a>
+      {/* <a className={`proj-button proj-button-${btn}`}>Proceed to website</a> */}
       <div className="proj-languages">
         {/* {languages} */}
         <TypescriptIcon className="code-icon" />

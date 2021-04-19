@@ -236,7 +236,7 @@ body {
 }
 
 .code-icon {
-  padding: var(--tertiary-padding) var(--tertiary-padding)
+  padding: var(--tertiary-padding) var(--secondary-padding)
     var(--tertiary-padding) 0;
   height: 45px;
   width: 45px;
@@ -245,22 +245,30 @@ body {
 /* TEXT TRANSLATE 3D CARDS */
 
 .projects {
+  margin: auto;
   height: 100vh;
-  width: 100%;
+  width: 40%;
   user-select: none;
   transform: translate3d(0, 0, 0);
   transform-style: preserve-3d;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+  justify-items: center;
+  padding: var(--primary-padding);
 }
 .projects .project {
   position: relative;
-  width: 12.5rem;
-  height: 34.5rem;
+  width: 8rem;
+  height: 24rem;
   color: #fff;
-  margin: 0rem;
-  transform: rotateX(45deg) rotateY(-15deg) rotate(45deg);
+  border-radius: var(--border-radius-heavy);
+  transform: rotate(29deg);
   transition: all 0.8s ease;
   overflow: hidden;
   cursor: pointer;
@@ -280,13 +288,6 @@ body {
   position: relative;
 }
 
-.project .proj-image img {
-  background-color: var(--primary-background);
-  max-height: 80%;
-  max-width: 100%;
-  box-shadow: var(--box-shadow-medium);
-  opacity: 0.7;
-}
 .project:hover .proj-image img {
   opacity: 1;
 }
@@ -294,14 +295,12 @@ body {
 .project .proj-title {
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-medium);
-  text-shadow: var(--box-shadow-heavy);
   padding: var(--quaternary-padding) 0;
   align-self: flex-start;
 }
 .project .proj-description {
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-light);
-  text-shadow: var(--box-shadow-heavy);
   color: var(--secondary-font-color);
 }
 
@@ -358,8 +357,12 @@ body {
   justify-content: space-around;
   padding: var(--secondary-padding) 0;
   background-color: var(--tertiary-background);
-  border-radius: var(--border-radius-heavy) var(--border-radius-heavy) 0 0;
+  border-radius: var(--border-radius-light) var(--border-radius-light) 0 0;
   box-shadow: var(--box-shadow-heavy);
+}
+
+.proj-languages .code-icon {
+  height: 1.5rem;
 }
 
 .projects .proj-1,
@@ -368,12 +371,10 @@ body {
 .proj-4 {
   z-index: 3;
   background-color: var(--secondary-background);
-  box-shadow: 20px 20px 60px rgba(34, 50, 84, 0.5),
-    1px 1px 0px 1px var(--secondary-background);
   color: #fff;
 }
 
-.projects .proj-1:hover {
+/* .projects .proj-1:hover {
   box-shadow: 1px 1px 5px var(--dark-red), 1px 1px 0px 1px var(--dark-red);
   transform: rotateX(20deg) rotateY(0deg) rotate(0deg) translate(170px, -355px);
 }
@@ -390,4 +391,4 @@ body {
 .projects .proj-4:hover {
   box-shadow: 1px 1px 5px var(--dark-blue), 1px 1px 0px 1px var(--dark-blue);
   transform: rotateX(20deg) rotateY(0deg) rotate(0deg) translate(170px, -355px);
-}
+} */
