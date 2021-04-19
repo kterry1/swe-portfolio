@@ -189,6 +189,7 @@ body {
   position: relative;
   width: 25vw;
   height: 40vh;
+  min-height: 300px;
   background-color: var(--secondary-background);
   border-radius: var(--border-radius-medium);
   box-shadow: var(--box-shadow-light);
@@ -254,7 +255,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  /* grid-template-rows: 1fr 1fr; */
   gap: 0px 0px;
   grid-template-areas:
     ". . ."
@@ -269,11 +269,11 @@ body {
   height: 22rem;
   color: #fff;
   border-radius: var(--border-radius-heavy);
-  transform: rotate(31deg);
+  transform: rotate(30deg);
   transition: all 0.8s ease;
   overflow: hidden;
   cursor: pointer;
-  margin-top: var(--secondary-margin);
+  margin: var(--secondary-margin);
   padding: var(--secondary-padding);
   display: flex;
   flex-direction: column;
@@ -380,5 +380,65 @@ body {
 .proj-2:hover,
 .proj-3:hover,
 .proj-4:hover {
-  transform: rotate(31deg) translate(0px, -5rem);
+  transform: rotate(30deg) translate(0px, -5rem);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1680px) {
+  .home-greeting .profile-image {
+    height: 40px;
+    width: 40px;
+  }
+
+  .home-greeting .profile-image img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .home-greeting .name {
+    font-size: var(--font-size-xl);
+  }
+
+  .home-greeting .description {
+    color: var(--secondary-font-color);
+    font-size: var(--font-size-md);
+    padding-bottom: var(--quaternary-padding);
+  }
+
+  .home-greeting .greeting {
+    font-size: var(--font-size-sm);
+    margin: var(--tertiary-margin) 0;
+  }
+
+  .code-icon {
+    padding: var(--tertiary-padding) var(--tertiary-padding)
+      var(--tertiary-padding) 0;
+    height: 30px;
+    width: 30px;
+  }
+
+  .projects {
+    margin: auto;
+    height: 90vh;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .home-greeting .greeting {
+    margin: var(--tertiary-margin) 0;
+  }
+
+  .code-icon {
+    padding: var(--tertiary-padding) var(--tertiary-padding)
+      var(--tertiary-padding) 0;
+    height: 25px;
+    width: 25px;
+  }
+
+  .projects {
+    margin: auto;
+    height: 85vh;
+  }
 }
