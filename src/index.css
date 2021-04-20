@@ -188,6 +188,7 @@ body {
 .home-greeting {
   position: relative;
   width: 25vw;
+  min-width: 285px;
   height: 40vh;
   min-height: 300px;
   background-color: var(--secondary-background);
@@ -239,8 +240,8 @@ body {
 .code-icon {
   padding: var(--tertiary-padding) var(--secondary-padding)
     var(--tertiary-padding) 0;
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
 }
 
 /* TEXT TRANSLATE 3D CARDS */
@@ -266,6 +267,7 @@ body {
 .projects .project {
   position: relative;
   min-width: 10rem;
+  max-width: 10rem;
   height: 22rem;
   color: #fff;
   border-radius: var(--border-radius-heavy);
@@ -282,15 +284,20 @@ body {
 }
 
 .proj-image-container {
+  position: relative;
   display: flex;
   height: 30%;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   background-color: #ffc542;
   /* background-color: #ff565e; */
   border-radius: var(--border-radius-heavy);
+}
+
+.proj-image svg {
+  width: 100%;
+  height: 100%;
 }
 
 .project .proj-title {

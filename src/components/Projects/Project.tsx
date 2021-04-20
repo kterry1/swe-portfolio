@@ -4,7 +4,7 @@ import { ReactComponent as ReactIcon } from "../../assets/images/react.svg";
 import { ReactComponent as ReduxIcon } from "../../assets/images/redux.svg";
 
 interface Props {
-  img: string;
+  img: any;
   title: string;
   desc: string;
   languages: string[];
@@ -19,7 +19,7 @@ const Project = (props: Props) => {
   return (
     <div className={`project ${color}`}>
       <div className="proj-image-container">
-        <div className="proj-image"></div>
+        <div className="proj-image">{img}</div>
       </div>
       {/* <div className="proj-title">{title}</div> */}
       {/* <div className="proj-description">{desc}</div> */}
