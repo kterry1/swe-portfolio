@@ -4,10 +4,10 @@ import profilePic from "../../assets/images/profile-pic.png";
 
 const HomeGreeting = () => {
   return (
-    <div className="home-greeting-container">
+    <div id="home" className="home-greeting-container">
       <div className="home-greeting">
         <div className="profile-image">
-          <img src={profilePic} />
+          <img src={profilePic} alt="animated headshot" />
         </div>
         <div className="name">Kevin Terry</div>
         <div className="description">terrykevin1@gmail.com</div>

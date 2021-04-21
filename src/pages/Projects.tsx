@@ -27,7 +27,7 @@ const Projects = () => {
       />
       <Project
         img={<EditorSvg />}
-        title="Coffee Cafe"
+        title="Code Editor"
         desc="Order a cup of coffee, tea, or grab a delicious pastry!"
         languages={["ts", "react", "redux"]}
         color="proj-4"
@@ -35,7 +35,7 @@ const Projects = () => {
       />
       <Project
         img={<PortfolioSvg />}
-        title="Coffee Cafe"
+        title="Portolio"
         desc="Order a cup of coffee, tea, or grab a delicious pastry!"
         languages={["ts", "react", "redux"]}
         color="proj-3"
@@ -43,7 +43,7 @@ const Projects = () => {
       />
       <Project
         img={<DashboardSvg />}
-        title="Coffee Cafe"
+        title="Analytics Dashboard"
         desc="Order a cup of coffee, tea, or grab a delicious pastry!"
         languages={["ts", "react", "redux"]}
         color="proj-1"

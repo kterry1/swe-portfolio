@@ -4,13 +4,22 @@ const Navbar = () => {
   return (
     <div className="nav-menu">
       <div className="menu-item item-1">
-        <i className="fas fa-home"></i>
+        <a href="#home">
+          <i className="fas fa-home"></i>
+        </a>
       </div>
       <div className="menu-item item-2">
-        <i className="fas fa-desktop"></i>
+        <a href="#projects">
+          <i className="fas fa-desktop"></i>
+        </a>
       </div>
       <div className="menu-item item-3">
-        <i className="fab fa-linkedin-in"></i>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/kevin-terry-065019134/"
+        >
+          <i className="fab fa-linkedin-in"></i>
+        </a>
       </div>
       <div className="menu-item item-4">
         <i className="far fa-file"></i>
