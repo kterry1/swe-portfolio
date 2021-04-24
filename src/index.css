@@ -541,4 +541,11 @@ body {
   .project .proj-description {
     font-size: var(--font-size-xs);
   }
+
+  .proj-1:hover,
+  .proj-2:hover,
+  .proj-3:hover,
+  .proj-4:hover {
+    transform: rotate(30deg) translate(0px, -3rem);
+  }
 }
