@@ -11,6 +11,7 @@ import { ReactComponent as HtmlIcon } from "../../assets/images/html5.svg";
 
 interface Props {
   img: any;
+  site: string;
   title: string;
   desc: string;
   languages: string[];
@@ -18,7 +19,7 @@ interface Props {
 }
 
 const Project = (props: Props) => {
-  const { img, title, desc, languages, color } = props;
+  const { img, site, title, desc, languages, color } = props;
 
   const languageIcons: Record<string, React.ComponentType> = {
     react: ReactIcon,
@@ -38,7 +39,7 @@ const Project = (props: Props) => {
       </div>
       <div className="proj-title">{title}</div>
       <div className="proj-description">{desc}</div>
-      <a href="#" className={`proj-button`}>
+      <a href={site} target="_blank" rel="noreferrer" className={`proj-button`}>
         site <ArrowIcon />
       </a>
       <div className="proj-languages">
