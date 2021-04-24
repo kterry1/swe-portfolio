@@ -4,6 +4,7 @@ const GitHubLink = () => {
   return (
     <a
       target="_blank"
+      rel="noreferrer"
       href="https://github.com/kterry1"
       className="github-corner"
       aria-label="View source on GitHub"

@@ -1,8 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import computerLogo from "../../assets/images/gummy-programming.svg";
 
-const HomeImage = (props: any) => {
-  return <img className="computer-logo" src={computerLogo} />;
+const HomeImage = () => {
+  return (
+    <img className="computer-logo" alt="animated computer" src={computerLogo} />
+  );
 };
 
 export default HomeImage;

@@ -349,15 +349,18 @@ body {
   bottom: 0px;
   display: flex;
   justify-content: space-around;
-  padding: var(--secondary-padding) 0;
+  padding: var(--tertiary-padding) 0;
   background-color: var(--tertiary-background);
   border-radius: var(--border-radius-light) var(--border-radius-light) 0 0;
   box-shadow: var(--box-shadow-heavy);
 }
 
-.proj-languages .code-icon {
+.proj-languages .code-icon svg {
+  width: 100%;
+  height: 40px;
   padding: var(--tertiary-padding);
   height: 1.5rem;
+  margin: auto;
 }
 
 .projects .proj-1,
@@ -373,7 +376,7 @@ body {
 .proj-2:hover,
 .proj-3:hover,
 .proj-4:hover {
-  transform: rotate(30deg) translate(0px, -5rem);
+  transform: rotate(30deg) translate(0px, -4rem);
 }
 
 /* Media Queries */
@@ -404,11 +407,19 @@ body {
     margin: var(--tertiary-margin) 0;
   }
 
-  .code-icon {
+  .home-greeting .code-icon {
     padding: var(--tertiary-padding) var(--tertiary-padding)
       var(--tertiary-padding) 0;
     height: 30px;
     width: 30px;
+  }
+
+  .proj-languages .code-icon svg {
+    width: 100%;
+    height: 30px;
+    padding: var(--tertiary-padding);
+    height: 1.5rem;
+    margin: auto;
   }
 
   .projects {
@@ -423,11 +434,19 @@ body {
     margin: var(--tertiary-margin) 0;
   }
 
-  .code-icon {
+  .home-greeting .code-icon {
     padding: var(--tertiary-padding) var(--tertiary-padding)
       var(--tertiary-padding) 0;
     height: 25px;
     width: 25px;
+  }
+
+  .proj-languages .code-icon svg {
+    width: 100%;
+    height: 25px;
+    padding: var(--tertiary-padding);
+    height: 1.5rem;
+    margin: auto;
   }
 
   .projects {
@@ -436,7 +455,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1130px) {
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -448,7 +467,9 @@ body {
       ". ."
       ". .";
   }
+}
 
+@media screen and (max-width: 1030px) {
   .github-corner > svg {
     color: #fff !important;
     fill: rgb(37, 198, 133) !important;
@@ -460,10 +481,6 @@ body {
 
   .home-greeting {
     width: 50vw;
-  }
-
-  .home-greeting .greeting {
-    /* font-size: var(--font-size-xs); */
   }
 
   .computer-logo {

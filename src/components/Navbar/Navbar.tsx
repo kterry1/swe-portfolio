@@ -16,6 +16,7 @@ const Navbar = () => {
       <div className="menu-item item-3">
         <a
           target="_blank"
+          rel="noreferrer"
           href="https://www.linkedin.com/in/kevin-terry-065019134/"
         >
           <i className="fab fa-linkedin-in"></i>
