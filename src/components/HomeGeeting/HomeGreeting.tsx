@@ -13,7 +13,7 @@ const HomeGreeting = () => {
         <div className="description">terrykevin1@gmail.com</div>
         <div className="description">678-656-9875</div>
         <div className="greeting">
-          I'm a front end engineer who enjoys finding solutions to problems
+          I'm a front end developer who enjoys finding solutions to problems
           through code. After checking out my projects, Github, and Linkedin,
           throw me a quick message about what you think of my site!
         </div>

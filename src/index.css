@@ -330,6 +330,7 @@ body {
   box-shadow: var(--box-shadow-light);
   transition: all 1.4s ease;
   background-color: var(--primary-green);
+  text-decoration: none;
 }
 
 .proj-button:hover {
