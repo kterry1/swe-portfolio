@@ -530,6 +530,9 @@ body {
   .projects .project {
     min-width: 8rem;
   }
+  .proj-button {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -546,6 +549,6 @@ body {
   .proj-2:hover,
   .proj-3:hover,
   .proj-4:hover {
-    transform: rotate(30deg) translate(0px, -3rem);
+    transform: rotate(30deg) translate(0px, -2rem);
   }
 }

@@ -21,7 +21,7 @@ const Projects = () => {
         img={<EditorSvg />}
         site="https://amazing-mirzakhani-878444.netlify.app/"
         title="Code Editor"
-        desc="Import and update files in this amazing code editor behind an Auth0 authentication."
+        desc="Import and update files with the language of your choice."
         languages={["ts", "react", "redux", "jest"]}
         color="proj-4"
       />

@@ -22,9 +22,6 @@ const Navbar = () => {
           <i className="fab fa-linkedin-in"></i>
         </a>
       </div>
-      <div className="menu-item item-4">
-        <i className="far fa-file"></i>
-      </div>
     </div>
   );
 };
