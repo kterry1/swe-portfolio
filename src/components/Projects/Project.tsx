@@ -39,9 +39,16 @@ const Project = (props: Props) => {
       </div>
       <div className="proj-title">{title}</div>
       <div className="proj-description">{desc}</div>
-      <a href={site} target="_blank" rel="noreferrer" className={`proj-button`}>
-        site <ArrowIcon />
-      </a>
+      <div className="proj-btn-container">
+        <a
+          href={site}
+          target="_blank"
+          rel="noreferrer"
+          className={`proj-button`}
+        >
+          site <ArrowIcon />
+        </a>
+      </div>
       <div className="proj-languages">
         {languages?.map((lang) => {
           const LanguageIcon = languageIcons[lang];
