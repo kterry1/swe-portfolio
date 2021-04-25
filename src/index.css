@@ -546,6 +546,7 @@ body {
 @media screen and (max-width: 400px) {
   .projects .project {
     min-width: 7rem;
+    max-width: 7rem;
     margin: var(--quaternary-margin);
   }
 
