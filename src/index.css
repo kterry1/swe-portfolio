@@ -538,16 +538,12 @@ body {
   .projects .project {
     min-width: 8rem;
   }
-  .proj-button {
-    width: 60%;
-  }
 }
 
 @media screen and (max-width: 400px) {
   .projects .project {
     min-width: 7rem;
-    max-width: 7rem;
-    margin: var(--quaternary-margin);
+    /* margin: var(--quaternary-margin); */
   }
 
   .project .proj-description {
